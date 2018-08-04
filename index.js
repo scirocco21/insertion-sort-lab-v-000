@@ -10,17 +10,17 @@ function findMinAndRemove(array){
     }
     array.splice(minIndex, 1);
     return min;
-    }
+  }
 }
 
-function insertionSort(array){
-  function selectionSort(array){
-     let newMin;
-     let sorted = []
-     while(array.length != 0){
-       newMin = minAndRemove(array)
-       sorted.push(newMin)
-     }
-     return sorted;
-   }
+
+function selectionSort(array){
+  let newMin;
+  let sorted = []
+  while(array.length != 0){
+    newMin = minAndRemove(array)
+    sorted.push(newMin)
+  }
+  return sorted;
 }
+
